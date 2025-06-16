@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task Bunny</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">🐰 Task Bunny</div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#task">Task</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="welcome">
+    <h1>Welcome to Task Bunny</h1>
+    <p>“Hop to it with Task Bunny!”</p>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p>
+      At Task Bunny, we believe productivity should be calm and joyful.  
+      We help you organize your goals with clarity — one small hop at a time.  
+      Whether it’s big dreams or daily to-dos, we’re here to support you with kindness. 💜
+    </p>
+  </section>
+
+  <section class="todo" id="task">
+    <h2>To-Do List</h2>
+    <div class="input-area">
+      <input type="text" id="taskInput" placeholder="Enter your task" />
+      <button onclick="addTask()">Add</button>
+    </div>
+    <ul id="taskList"></ul>
+  </section>
+
+  <footer>
+    <p>✨ Thank you for visiting Task Bunny — hop back soon! ✨</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

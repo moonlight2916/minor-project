@@ -1,0 +1,191 @@
+/* style.css */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('https://t3.ftcdn.net/jpg/06/50/27/62/360_F_650276211_rudB1OulDUnFNl7nPvo80UvwhWOs5FX7.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+}
+
+nav {
+  background: rgba(0, 20, 40, 0.95);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #38bdf8;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #0284c7;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: rgba(0, 20, 40, 0.6);
+  animation: fadeIn 2s ease;
+  color: #f0f9ff;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #7dd3fc;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.about {
+  padding: 60px 40px;
+  background-color: #0f172a;
+  text-align: center;
+  color: #cbd5e1;
+}
+
+.about h2 {
+  font-size: 2rem;
+  color: #38bdf8;
+}
+
+.about p {
+  font-size: 1rem;
+  max-width: 700px;
+  margin: auto;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+.todo {
+  padding: 40px;
+  background: rgba(255,255,255,0.05);
+  text-align: center;
+}
+
+.todo h2 {
+  color: #7dd3fc;
+  margin-bottom: 20px;
+}
+
+.input-area {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 40%;
+  border-radius: 6px;
+  border: 1px solid #7dd3fc;
+  background-color: #1e293b;
+  color: #e0f2fe;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #0ea5e9;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0369a1;
+}
+
+#taskList {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#taskList li {
+  background: #1e40af;
+  color: #f8fafc;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: slideUp 0.5s ease;
+}
+
+.edit-btn, .delete-btn {
+  border: none;
+  padding: 6px 10px;
+  margin-left: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+.edit-btn {
+  background-color: #facc15;
+}
+
+.delete-btn {
+  background-color: #ef4444;
+}
+
+.edit-btn:hover {
+  background-color: #eab308;
+}
+
+.delete-btn:hover {
+  background-color: #dc2626;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #0ea5e9;
+  color: white;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
